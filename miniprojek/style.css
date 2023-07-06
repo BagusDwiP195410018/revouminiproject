@@ -1,0 +1,100 @@
+#navigation {  
+}
+p {
+  font-size: 110%;
+  color: black;
+}
+#contents {
+    float: center;
+}
+body {
+    width: 90%; 
+    margin: auto;
+}
+<style>
+{
+    background-color: white;
+    color: crimson;
+    font-family: sans-serif;
+    text-align: center;
+    width: 45%;
+    margin:auto;
+    padding: 20px;
+}
+ 
+body
+{
+    background-image: url('Chrysanthemum.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+</style>
+
+header{
+    width: 95%;
+    height: 70px;
+    background: white;
+
+    display: flex;
+    justify-content: right;
+    align-items: right;
+}
+atas{
+    width: 98%;
+    height: 100px;
+    background: white;
+    word-spacing: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    width: 70%;
+    height: 500px;
+    background: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+aside{
+    width: 28%;
+    height: 500px;
+    background: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: top;
+}
+#contents {
+    float: center;
+}
+img {
+    border: 0;
+    height: 300px;
+    max-width: 100%;
+    width:600px; 
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    height:60px;
+    background-color:#FFFFFF;
+    box-shadow:2px 2px 12px rgba(0,0,0,0.2);
+    padding:0px 5%;
+     
+}
+nav ul{
+    display: flex;
+}
+  
+nav ul li a{
+    margin:30px;
+    font-family:myriad pro regular;
+    color:#505050;
+    font-size: 15px;
+    font-weight:700;
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="description" contents="Miniproject">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head> 
+            <body>  
+                <style>
+                    {
+                        background-color: white;
+                        color: crimson;
+                        font-family: sans-serif;
+                        text-align: center;
+                        width: 45%;
+                        margin:auto;
+                        padding: 20px;
+                    }
+                     
+                    body
+                    {
+                        background-image: url('Chrysanthemum.jpg');
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                    }
+                    </style>
+                <header>
+                    <nav id="navigation">
+                        <ul>
+                            
+                            <li><a href="index.php?page=callus">Call Us</a></li>
+                            <li><a href="index.php?page=ourpackage">Our Package</a></li>
+                            <li><a href="index.php?page=home">Home</a></li>
+                        </ul>
+                    </nav>
+                </header>
+                <div id="contents">
+                    <?php 
+                    if(isset($_GET['page'])){
+                        $page = $_GET['page'];
+             
+                        switch ($page) {
+                            case 'home':
+                            include "home.php";
+                            break;
+                            case 'callus':
+                            include "callus.php";
+                            break;
+                            case 'ourpackage':
+                            include "ourpackage.php";
+                            break;          
+                        }
+                    }
+            else{
+                        include "home.php";
+                    }
+                    ?>
+             
+                </div>
+            
+                <atas>
+                    <center><h2>Top Rated E-Groceries shop in Indonesian</h2><br>
+                        Every Day with best ingredients</center>
+                </atas>
+                <div style="display: flex;">
+                    <main>
+                           <div> 
+                           <center>  <img src="img/buah.jpg"  /><br>
+                            <i>"setiap hari sayur buah fresh disini"</i></center>
+                            <p><b>Use this space to provide users with more information<br>
+                                abaut your offer. Consider it a follow to yourheadline<br>
+                                and explain the benefits of your service of product</b>
+                            
+                                <ol>
+                                <li>Your first feature, written in the form of a benefit statement.</li>
+                                <li>Your second feature, written in the form of a benefit statement. </li>
+                                <li>Your third feayure, written in the form of a benefit statement.</li>
+                                </ol>
+                            </p>   
+                        </div>
+                     </main>
+
+                <aside>
+                    <fieldset>
+                        <div><h3>Contact Us</h3><br>
+                        Sales akan menghubungi anda 1x24 jam setelah data kami terima <br>
+                      
+                            <p>
+                                <b><label>Your Name:</label></b><br>
+                                <input type="text" name="your_name" placeholder="First and name" />
+                            </p>
+                            <p>
+                                <b><label>Email Address:</label></b><br>
+                                <input type="text" name="email" placeholder="example@email.com" />
+                            </p>
+                            <p>
+                                <form action="/action_page.php">
+                                <b><label>What are you interested in?</label></b><br>
+                                <select name="select" >
+                                    <option value="Select option">Select option</option>
+                                    <option value="b">b</option>
+                                    <option value="c">c</option>
+                                    <option value="d">d</option>
+                                </select>
+                            </form>
+                            </p>
+                            <p>
+                                <input type="submit" name="submit" value="SEND" />
+                            </p>
+                        <div> </fieldset>
+                </aside>
+            </div>
+            </body>    
+ </html>
